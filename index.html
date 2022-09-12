@@ -14,9 +14,9 @@
         <h1>START BOOTSTRAP </h1>
       </div>
       <ul class="nav-btn">
-        <li class="list active "><a href="#">PORTFOLIO</a></li>
-        <li class="list "><a href="#">ABOUT</a></li>
-        <li class="list "><a href="#">CONTACT</a></li>
+        <li class="list active "><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="list "><a href="#about">ABOUT</a></li>
+        <li class="list "><a href="#contact">CONTACT</a></li>
       </ul>
       <div class="menu">
         <p>menu <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas"
@@ -30,7 +30,7 @@
   </nav>
   <!-- navbar end here -->
   <!-- hero section -->
-  <div class="hero">
+  <section class="hero">
     <!-- avataaars -->
     <div class="content">
       <img src="images/avataaars.svg" alt="avatar" class="avatar">
@@ -50,10 +50,10 @@
       </div>
       <p> Graphic Artist - Web Designer - Illustrator</p>
     </div>
-  </div>
+  </section>
   <!-- hero end -->
   <!-- PORTFOLIO -->
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="title-portfolio">
       <h2>PORTFOLIO</h2>
       <div class="hr-star">
@@ -92,7 +92,7 @@
     </div>
   </section>
   <!-- about -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="title-about">
       <h2>ABOUT</h2>
       <div class="hr-star">
@@ -134,7 +134,7 @@
   </section>
 
   <!-- CONTACT ME -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="title-contact">
       <h2>CONTACT ME</h2>
       <div class="hr-star">
@@ -149,24 +149,25 @@
         </div>
         <div class="line"></div>
       </div>
+      <p class="error d-none" id="error">error</p>
     </div>
     <form>
       <div class="contact-form">
         <div class="form-group">
-          <input type="text" placeholder="Full Name">
+          <input type="text" placeholder="Full Name" id="name">
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Email address">
+          <input type="email" placeholder="Email address" id="email">
         </div>
         <div class="form-group">
-          <input type="number" placeholder="Phone number">
+          <input type="text" placeholder="Phone number" id="phone">
         </div>
         <div class="form-group">
-          <textarea placeholder="Message" cols="30" rows="5"></textarea>
+          <textarea placeholder="Message" id="message" cols="30" rows="5"></textarea>
         </div>
 
         <div class="btn">
-          <button>Send</button>
+          <button id="send">Send</button>
         </div>
       </div>
 
