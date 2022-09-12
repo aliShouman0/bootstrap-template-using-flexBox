@@ -21,7 +21,9 @@ send.addEventListener("click", (e) => {
       "Email  must be minimum of 3 characters before the @ and 5 characters after the @"
     );
   } else if (!phoneMatch(phoneValue)) {
-    makeError("phone must be as +961(3|70|71|76|78|79|81) follod by 6 digits");
+    makeError(
+      "phone must be as +961(3|70|71|76|78|79|81) followed  by 6 digits"
+    );
   } else if (messageValue.length < 100) {
     makeError("Message should be a minimum of 100 characters.");
   }
