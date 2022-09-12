@@ -104,7 +104,8 @@ img {
 }
 
 .title-portfolio,
-.title-about {
+.title-about,
+.title-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,11 +114,13 @@ img {
   font-size: 35px;
 }
 
-.portfolio .hr-star {
+.portfolio .hr-star,
+.contact .hr-star {
   color: #2c3e50;
 }
 
-.portfolio .line {
+.portfolio .line,
+.contact .line {
   background-color: #2c3e50;
 }
 
@@ -195,8 +198,61 @@ img {
 
 .btn-about > a:hover {
   color: #212529;
-  background-color:white;
+  background-color: white;
 }
+
+/* contact */
+.contact {
+  padding: 100px 0;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group {
+  padding: 24px 48px;
+  margin-bottom: 1rem;
+}
+
+.form-group > input,
+textarea {
+  width: 60vw;
+  height: 30px;
+  padding: 0.9rem 0;
+  border: none;
+  border-bottom: 0.3px solid rgba(92, 92, 92, 0.267);
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.form-group > textarea {
+  height: 7rem;
+}
+
+.form-group > input:focus,
+textarea:focus {
+  border-bottom: 0.3px solid #1abc9c;
+}
+
+.btn {
+  width: 60vw;
+}
+
+.btn > button {
+  padding: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  width: 80px;
+  font-size: 1.2rem;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 992px) {
