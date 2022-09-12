@@ -16,6 +16,7 @@ img {
   align-items: center;
   padding: 30px 85px;
   background-color: #2c3e50;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar {
@@ -36,11 +37,15 @@ img {
 }
 
 .list > a {
-  margin-right: 20px;
+  margin: 20px;
   text-decoration: none;
   cursor: pointer;
   color: white;
   transition: all 0.3s ease-in-out;
+}
+
+.list {
+  padding: 1rem 0rem;
 }
 
 .list > a:hover,
@@ -51,10 +56,20 @@ img {
   display: none;
 }
 
+.active {
+  background-color: #1abc9c;
+  border-radius: 7px;
+}
+
+.active:hover a {
+  color: white;
+}
+
 /* here  */
 .hero {
   background-color: #1abc9c;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -62,8 +77,9 @@ img {
   justify-content: center;
   color: white;
   margin: 0 16px;
-  padding: 6rem 12px;
+  padding: 10rem 12px;
 }
+
 .avatar {
   width: 15rem;
   display: block;
@@ -112,6 +128,7 @@ img {
   align-items: center;
   color: #2c3e50;
   font-size: 35px;
+  text-align: center;
 }
 
 .portfolio .hr-star,
@@ -255,7 +272,6 @@ textarea:focus {
 
 /* footer */
 .footer {
- 
   background-color: #2c3e50;
   color: #fff;
   text-align: center;
@@ -339,6 +355,7 @@ textarea:focus {
   .nav-btn {
     display: none;
   }
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -361,5 +378,18 @@ textarea:focus {
     width: 20px;
     height: 20px;
     padding-left: 3px;
+  }
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
