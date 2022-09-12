@@ -53,7 +53,7 @@ img {
 
 /* here  */
 .hero {
-  background-color: #15967d;
+  background-color: #2ae0bc;
 }
 .content {
   display: flex;
@@ -71,7 +71,7 @@ img {
 }
 
 .hero h4 {
-  font-size: 44px;
+  font-size: 50px;
 }
 
 .hr-star {
@@ -89,8 +89,9 @@ img {
 .line {
   margin: 0 16px;
   width: 100px;
-  height: 2px;
+  height: 5px;
   background-color: white;
+  border-radius: 3px;
 }
 
 .content > p {
@@ -124,16 +125,16 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 0 12px;
 }
 
 .portfolio-img {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  max-width: 24rem;
   overflow: hidden;
-  padding: 12px;
+  padding: 12px  ;
 }
 
 .portfolio-img > img {
