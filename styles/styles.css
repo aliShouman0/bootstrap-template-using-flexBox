@@ -8,19 +8,24 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 85px;
   background-color: #2c3e50;
 }
 
 .navbar {
   color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .nav-btn {
   display: flex;
   justify-content: center;
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
 }
 
@@ -37,7 +42,53 @@
   color: #15967d;
 }
 .menu {
-  display: none
+  display: none;
+}
+
+/* here  */
+.hero {
+  background-color: #15967d;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 16px;
+  padding: 6rem 12px;
+}
+.avatar {
+  width: 15rem;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.hero h4 {
+  font-size: 44px;
+}
+
+.hr-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 24px;
+}
+
+.star {
+  height: 35px;
+  width: 35px;
+}
+.line {
+  margin: 0 16px;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+
+.content > p {
+  font-size: 20px;
 }
 
 /* Media Query */
@@ -60,7 +111,7 @@
 
   .menu > p {
     text-transform: uppercase;
-    display: flex; ;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
