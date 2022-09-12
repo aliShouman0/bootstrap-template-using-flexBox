@@ -45,7 +45,7 @@ img {
 
 .list > a:hover,
 .list > a:focus {
-  color: #15967d;
+  color: #1abc9c;
 }
 .menu {
   display: none;
@@ -53,7 +53,7 @@ img {
 
 /* here  */
 .hero {
-  background-color: #2ae0bc;
+  background-color: #1abc9c;
 }
 .content {
   display: flex;
@@ -103,7 +103,8 @@ img {
   padding: 100px 0;
 }
 
-.title-portfolio {
+.title-portfolio,
+.title-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,13 +135,68 @@ img {
   display: block;
   max-width: 24rem;
   overflow: hidden;
-  padding: 12px  ;
+  padding: 12px;
 }
 
 .portfolio-img > img {
   border-radius: 0.7rem;
 }
 
+/* About */
+
+.about {
+  background-color: #1abc9c;
+  padding: 100px 0;
+}
+
+.title-about {
+  color: white;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 0 120px;
+}
+.p-content {
+  max-width: 350px;
+  margin: 16px;
+}
+
+.p-content > p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.btn-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-about > a {
+  margin-top: 24px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 16px 28px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-about svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.btn-about > a:hover {
+  color: #212529;
+  background-color:white;
+}
 /* Media Query */
 
 @media only screen and (max-width: 992px) {
@@ -152,7 +208,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #15967d;
+    background-color: #1abc9c;
     height: 50px;
     width: 100px;
     border-radius: 10px;
