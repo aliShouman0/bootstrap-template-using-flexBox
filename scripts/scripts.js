@@ -26,8 +26,13 @@ send.addEventListener("click", (e) => {
     );
   } else if (messageValue.length < 100) {
     makeError("Message should be a minimum of 100 characters.");
+  } else {
+    sendMessage(nameValue, emailValue, phoneValue, messageValue);
   }
 });
+
+// isend messag to data base
+function sendMessage(name, email, phone, message) {}
 
 // test if email match
 function emailMatch(em) {
