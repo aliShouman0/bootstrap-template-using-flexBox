@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: http://127.0.0.1:5500 ");
 include("getconnection.php");
 $done = false;
 if (isset($_POST["fullName"]) && isset($_POST["email"]) && isset($_POST["phone"]) && isset($_POST["message"])) {

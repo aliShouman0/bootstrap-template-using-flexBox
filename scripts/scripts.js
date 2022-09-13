@@ -32,7 +32,26 @@ send.addEventListener("click", (e) => {
 });
 
 // isend messag to data base
-function sendMessage(name, email, phone, message) {}
+function sendMessage(name, email, phone, message) {
+  let data = new FormData();
+  data.append("fullName", name);
+  data.append("email", email);
+  data.append("phone", phone);
+  data.append("message", message);
+
+  fetch("http://localhost:3000/backend/insertData.php", {
+    method: "POST",
+    body: data,
+  }).then((res) => {
+    if (res.ok) {
+      res.json().then((data) => {
+        if (data.done) {
+          window.location.href = "http://www.w3schools.com";
+        }
+      });
+    }
+  });
+}
 
 // test if email match
 function emailMatch(em) {
@@ -43,7 +62,6 @@ function emailMatch(em) {
 // test if phone match
 function phoneMatch(phone) {
   let pattern = /^\+961(3|70|71|76|78|79|81)[0-9]{6}/;
-  console.log(phone.match(pattern), phone);
   return phone.match(pattern) == null ? false : true;
 }
 
