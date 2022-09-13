@@ -46,7 +46,7 @@ function sendMessage(name, email, phone, message) {
     if (res.ok) {
       res.json().then((data) => {
         if (data.done) {
-          window.location.href = "http://www.w3schools.com";
+          window.location.href = "../data.html";
         }
       });
     }
