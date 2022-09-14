@@ -27,6 +27,10 @@ send.addEventListener("click", (e) => {
   } else if (messageValue.length < 100) {
     makeError("Message should be a minimum of 100 characters.");
   } else {
+    name_input.value = "";
+    email.value = "";
+    phone.value = "";
+    message.value = "";
     sendMessage(nameValue, emailValue, phoneValue, messageValue);
   }
 });
@@ -46,7 +50,7 @@ function sendMessage(name, email, phone, message) {
     if (res.ok) {
       res.json().then((data) => {
         if (data.done) {
-          window.location.href = "../data.html";
+          window.location.href = "../html/data.html";
         }
       });
     }
